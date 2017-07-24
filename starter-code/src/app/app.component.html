@@ -1,3 +1,8 @@
-<h1>
-  {{title}}
-</h1>
+<ul>
+    <div class="container" *ngFor="let image of images">
+        <img src='{{ image.src }}' alt="" width=200>
+        <p>Ironhack {{ image.description }}</p>
+    </div>
+</ul>
+<app-iteration2></app-iteration2>
+<app-iteration3></app-iteration3>

@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
-}
+  images: Array<Object> = [
+    {
+      src: 'assets/descarga.jpeg',
+      description: 'miami'
+    }, {
+      src: 'assets/descarga2.jpeg',
+      description: 'barcleona'
+    }, {
+      src: 'assets/descarga3.jpeg',
+      description: 'madrid'
+    }
+  ];
+};
