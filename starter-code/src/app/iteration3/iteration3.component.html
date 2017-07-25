@@ -3,5 +3,9 @@
     <h2> {{ champion.year }} </h2>
     <h3> {{ champion.team }} </h3>
     <img src='{{ champion.src }}' alt="" width=200>
-    <div class="players"> {{ champion.players }} </p>
+    <ul>
+    <li *ngFor="let player of champions.players">
+      {{ player[] }}
+    </li>
+  </ul>
 </div>
